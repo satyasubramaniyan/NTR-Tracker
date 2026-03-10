@@ -1,0 +1,164 @@
+/* filepath: c:\Users\SSUBR136\ntr-tracker\src\pages\customers\customers.module.scss */
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$color-primary: #1890ff;
+$color-success: #52c41a;
+$color-warning: #faad14;
+$color-danger: #ff4d4f;
+$color-text-primary: rgba(0, 0, 0, 0.85);
+$color-text-secondary: rgba(0, 0, 0, 0.65);
+$color-border: #d9d9d9;
+$color-bg-light: #fafafa;
+$border-radius: 8px;
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-title: 24px;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+.customersContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pageTitle {
+  font-size: $font-size-title;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin: 0 0 $spacing-sm 0;
+  line-height: 1.4;
+}
+
+.pageDescription {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .customersContainer {
+    padding: 0 $spacing-md;
+  }
+}
+
+@media (max-width: 768px) {
+  .customersContainer {
+    padding: 0 $spacing-sm;
+  }
+
+  .pageTitle {
+    font-size: $font-size-lg;
+  }
+
+  .pageDescription {
+    font-size: $font-size-sm;
+  }
+}
+
+@media (max-width: 576px) {
+  .pageTitle {
+    font-size: $font-size-base;
+  }
+}
+
+// Utility classes
+.fullWidth {
+  width: 100%;
+}
+
+.textTruncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+}
+
+.textSmallAccent {
+  font-size: 12px;
+  color: #666;
+}
+
+.textDisabled {
+  color: #999;
+}
+
+.textPrimary {
+  color: $color-primary;
+}
+
+.textSuccess {
+  color: $color-success;
+}
+
+.textDanger {
+  color: $color-danger;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginBottom16 {
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  max-width: 500px;
+}
+
+// Card styles
+.cardItemSection {
+  padding: $spacing-sm;
+  background-color: #e6f7ff;
+  border-radius: $border-radius;
+}
+
+.cardBillSummary {
+  background-color: #f0f5ff;
+  margin-bottom: $spacing-md;
+}
+
+.cardPaymentSummary {
+  background-color: #f6ffed;
+  margin-bottom: $spacing-md;
+}
+
+.cardItemHeader {
+  padding: $spacing-sm;
+  background-color: $color-bg-light;
+}
+
+// Layout utilities
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexBetweenAligned {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textLarge {
+  font-size: $font-size-lg;
+}
+
+.textBold {
+  font-weight: $font-weight-semibold;
+}
+
+.dividerTop {
+  padding-top: $spacing-sm;
+  border-top: 1px solid $color-border;
+}
